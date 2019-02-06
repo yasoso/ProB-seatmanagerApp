@@ -1,6 +1,6 @@
 $(function() {
 
-    var POLLLING_INVERVAL_TIME_IN_MILLIS = 5000;//5.0s
+    var POLLLING_INVERVAL_TIME_IN_MILLIS = 2000;//2.0s
     (function polling() {
         getseatUpdate();
         window.setTimeout(polling, POLLLING_INVERVAL_TIME_IN_MILLIS);
@@ -15,7 +15,7 @@ function getseatUpdate() {
             var valElem = $('#' + i);
 
             console.log(originalValue[1].usr)
-            if(originalValue[str].usr== null) {
+            if(originalValue[str].usr== "空席" || originalValue[str].usr== null ) {
                 
                 if(i == 1){
                     var style ={
@@ -69,6 +69,7 @@ function getseatUpdate() {
 
                 valElem.addClass('label label-default').css(style);
                 valElem.css('font-size','36px');
+                valElem.removeClass('label-danger');
                 valElem.html('空席')
                 console.log("空席")
 
@@ -125,8 +126,9 @@ function getseatUpdate() {
                 }
 
                 
-                valElem.addClass('label label-default').css(style);
-                valElem.css('font-size','24px');
+                valElem.addClass('label label-danger').css(style);
+                valElem.css('font-size','36px');
+                valElem.html(originalValue[str].usr)
                 
                 
             }
@@ -143,7 +145,7 @@ var stocks_usrid = [{seatid: 1,usr:null},
 
     $.ajax({
     type : "GET",
-    url : "usrupdate",
+    url : "usrUpdate",
     content : "application/json",
     dataType : "json",
 }).done(function(data) {

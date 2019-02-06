@@ -114,6 +114,21 @@ app.post('/usr', function(req, res) {
   if(req.body.seatid==1){
     stocks_usrid[0].usr = req.body.usrid
   }
+  else if(req.body.seatid==2){
+    stocks_usrid[1].usr = req.body.usrid
+  }
+  else if(req.body.seatid==3){
+    stocks_usrid[2].usr = req.body.usrid
+  }
+  else if(req.body.seatid==4){
+    stocks_usrid[3].usr = req.body.usrid
+  }
+  else if(req.body.seatid==5){
+    stocks_usrid[4].usr = req.body.usrid
+  }
+  else if(req.body.seatid==6){
+    stocks_usrid[5].usr = req.body.usrid
+  }
   
   // パラメータ名、nameを出力
   //usrid:座席id
