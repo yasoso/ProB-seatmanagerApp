@@ -14,38 +14,40 @@ function getseatUpdate() {
             var str =  i-1
             var valElem = $('#' + i);
 
-            console.log(originalValue[1].usr)
-            if(originalValue[str].usr== "空席" || originalValue[str].usr== null ) {
+            console.log(originalValue)
+            
+            
+            if(originalValue[str].state == "0") {
                 
                 if(i == 1){
                     var style ={
                         position:"absolute",
-                        top:"185px",
-                        left:"515px",
+                        top:"230px",
+                        left:"540px",
                         size :"7"
                     }
                 }
                 else if(i ==2){
                     var style ={
                         position:"absolute",
-                        top:"185px",
-                        left:"757px",
+                        top:"230px",
+                        left:"830px",
                         size :"7"
                     }
                 }
                 else if(i ==3){
                     var style ={
                         position:"absolute",
-                        top:"185px",
-                        left:"998px",
+                        top:"230px",
+                        left:"1110px",
                         size :"7" 
                     }
                 }
                 else if(i ==4){
                     var style ={
                         position:"absolute",
-                        top:"545px",
-                        left:"518px",
+                        top:"630px",
+                        left:"540px",
                         size :"7"
                     }
                 }
@@ -53,16 +55,16 @@ function getseatUpdate() {
                 else if(i ==5){
                     var style ={
                         position:"absolute",
-                        top:"545px",
-                        left:"757px",
+                        top:"630px",
+                        left:"830px",
                         size :"7"
                     }
                 }
                 else if(i ==6){
                     var style ={
                         position:"absolute",
-                        top:"545px",
-                        left:"998px",
+                        top:"630px",
+                        left:"1110px",
                         size :"7" 
                     }
                 }
@@ -70,40 +72,42 @@ function getseatUpdate() {
                 valElem.addClass('label label-default').css(style);
                 valElem.css('font-size','36px');
                 valElem.removeClass('label-danger');
-                valElem.html('空席')
-                console.log("空席")
+                valElem.removeClass('label-success');
+                valElem.html(originalValue[str].usr)
+                
 
-            } else {
+            } 
+            else if(originalValue[str].state=="1") {
                 var name = originalValue[str].usr
                 if(i == 1){
                     var style ={
                         position:"absolute",
-                        top:"185px",
-                        left:"515px",
+                        top:"230px",
+                        left:"540px",
                         size :"7"
                     }
                 }
                 else if(i ==2){
                     var style ={
                         position:"absolute",
-                        top:"185px",
-                        left:"757px",
+                        top:"230px",
+                        left:"830px",
                         size :"7"
                     }
                 }
                 else if(i ==3){
                     var style ={
                         position:"absolute",
-                        top:"185px",
-                        left:"998px",
+                        top:"230px",
+                        left:"1110px",
                         size :"7" 
                     }
                 }
                 else if(i ==4){
                     var style ={
                         position:"absolute",
-                        top:"545px",
-                        left:"518px",
+                        top:"630px",
+                        left:"540px",
                         size :"7"
                     }
                 }
@@ -111,16 +115,16 @@ function getseatUpdate() {
                 else if(i ==5){
                     var style ={
                         position:"absolute",
-                        top:"545px",
-                        left:"757px",
+                        top:"630px",
+                        left:"830px",
                         size :"7"
                     }
                 }
                 else if(i ==6){
                     var style ={
                         position:"absolute",
-                        top:"545px",
-                        left:"998px",
+                        top:"630px",
+                        left:"1110px",
                         size :"7" 
                     }
                 }
@@ -132,15 +136,75 @@ function getseatUpdate() {
                 
                 
             }
+            else if(originalValue[str].state== "2") {
+                var name = originalValue[str].usr
+                if(i == 1){
+                    var style ={
+                        position:"absolute",
+                        top:"230px",
+                        left:"540px",
+                        size :"7"
+                    }
+                }
+                else if(i ==2){
+                    var style ={
+                        position:"absolute",
+                        top:"230px",
+                        left:"830px",
+                        size :"7"
+                    }
+                }
+                else if(i ==3){
+                    var style ={
+                        position:"absolute",
+                        top:"230px",
+                        left:"1110px",
+                        size :"7" 
+                    }
+                }
+                else if(i ==4){
+                    var style ={
+                        position:"absolute",
+                        top:"630px",
+                        left:"540px",
+                        size :"7"
+                    }
+                }
+
+                else if(i ==5){
+                    var style ={
+                        position:"absolute",
+                        top:"630px",
+                        left:"830px",
+                        size :"7"
+                    }
+                }
+                else if(i ==6){
+                    var style ={
+                        position:"absolute",
+                        top:"630px",
+                        left:"1110px",
+                        size :"7" 
+                    }
+                }
+                
+                valElem.addClass('label label-success').css(style);
+                valElem.css('font-size','36px');
+                valElem.removeClass('label-default');
+                valElem.html(originalValue[str].usr)
+                
+                
+            }
+        
         }
     
 }
-var stocks_usrid = [{seatid: 1,usr:null},
-    {seatid: 2,usr:null},
-    {seatid: 3,usr:null},
-    {seatid: 4,usr:null},
-    {seatid: 5,usr:null},
-    {seatid: 6,usr:null},
+var stocks_usrid = [{seatid: 1,usr:"空席",state:0},
+                    {seatid: 2,usr:"空席",state:0},
+                    {seatid: 3,usr:"空席",state:0},
+                    {seatid: 4,usr:"空席",state:0},
+                    {seatid: 5,usr:"空席",state:0},
+                    {seatid: 6,usr:"空席",state:0},
 ];
 
     $.ajax({
@@ -163,4 +227,7 @@ var stocks_usrid = [{seatid: 1,usr:null},
     $("dd").text("error occured");
     });
 }
+
+
+
 });

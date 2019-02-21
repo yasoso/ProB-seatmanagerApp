@@ -9,22 +9,14 @@ var usersRouter = require('./routes/users');
 var bodyParser = require('body-parser')
 var app = express();
 
-//seatID
-var stocks = {"1": 0,
-              "2": 0,
-              "3": 0,
-              "4": 0,
-              "5": 0,
-              "6": 0,
-              
-}
+
 //usrid
-var stocks_usrid = [{seatid: 1,usr:null},
-                    {seatid: 2,usr:null},
-                    {seatid: 3,usr:null},
-                    {seatid: 4,usr:null},
-                    {seatid: 5,usr:null},
-                    {seatid: 6,usr:null},
+var stocks_usrid = [{seatid: 1,usr:"空席",state:0},
+                    {seatid: 2,usr:"空席",state:0},
+                    {seatid: 3,usr:"空席",state:0},
+                    {seatid: 4,usr:"空席",state:0},
+                    {seatid: 5,usr:"空席",state:0},
+                    {seatid: 6,usr:"空席",state:0},
 ];
 
     
@@ -62,12 +54,12 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.get('/seatUpdate', function(req, res){
-  console.log(stocks);
-  res.writeHead(200, {"Content-Type": "application/json"});
-  res.end(JSON.stringify({"stocks":stocks}));
+// app.get('/seatUpdate', function(req, res){
+//   console.log(stocks);
+//   res.writeHead(200, {"Content-Type": "application/json"});
+//   res.end(JSON.stringify({"stocks":stocks}));
 
-});
+// });
 
 app.get('/usrUpdate', function(req, res){
   console.log(stocks_usrid);
@@ -87,22 +79,23 @@ app.post('/state', function(req, res) {
   console.log(req.body.seatid);
   console.log(req.body.state);
   if(req.body.seatid==1){
-    stocks["1"] = req.body.state
+    stocks_usrid[0].state = req.body.state
   }
   else if(req.body.seatid==2){
-    stocks["2"] = req.body.state
+    stocks_usrid[1].state = req.body.state
   }
   else if(req.body.seatid==3){
-    stocks["3"] = req.body.state
+    stocks_usrid[2].state = req.body.state
   }
   else if(req.body.seatid==4){
-    stocks["4"] = req.body.state
+    stocks_usrid[3].state = req.body.state
   }
   else if(req.body.seatid==5){
-    stocks["5"] = req.body.state
+    stocks_usrid[4].state = req.body.state
+    
   }
   else if(req.body.seatid==6){
-    stocks["6"] = req.body.state
+    stocks_usrid[5].state = req.body.state
   }
   res.send('POST request to the homepage');
 });
@@ -113,21 +106,27 @@ app.post('/usr', function(req, res) {
   console.log(req.body);
   if(req.body.seatid==1){
     stocks_usrid[0].usr = req.body.usrid
+    stocks_usrid[0].state = req.body.state
   }
   else if(req.body.seatid==2){
     stocks_usrid[1].usr = req.body.usrid
+    stocks_usrid[1].state = req.body.state
   }
   else if(req.body.seatid==3){
     stocks_usrid[2].usr = req.body.usrid
+    stocks_usrid[2].state = req.body.state
   }
   else if(req.body.seatid==4){
     stocks_usrid[3].usr = req.body.usrid
+    stocks_usrid[3].state = req.body.state
   }
   else if(req.body.seatid==5){
     stocks_usrid[4].usr = req.body.usrid
+    stocks_usrid[4].state = req.body.state
   }
   else if(req.body.seatid==6){
     stocks_usrid[5].usr = req.body.usrid
+    stocks_usrid[5].state = req.body.state
   }
   
   // パラメータ名、nameを出力

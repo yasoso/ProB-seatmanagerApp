@@ -18,32 +18,32 @@ function getseatUpdate() {
                 if(i == 1){
                     var style ={
                         position:"absolute",
-                        top:"185px",
-                        left:"515px",
+                        top:"230px",
+                        left:"620px",
                         size :"7"
                     }
                 }
                 else if(i ==2){
                     var style ={
                         position:"absolute",
-                        top:"185px",
-                        left:"757px",
+                        top:"230px",
+                        left:"950px",
                         size :"7"
                     }
                 }
                 else if(i ==3){
                     var style ={
                         position:"absolute",
-                        top:"185px",
-                        left:"998px",
+                        top:"230px",
+                        left:"1280px",
                         size :"7" 
                     }
                 }
                 else if(i ==4){
                     var style ={
                         position:"absolute",
-                        top:"545px",
-                        left:"518px",
+                        top:"665px",
+                        left:"620px",
                         size :"7"
                     }
                 }
@@ -51,16 +51,16 @@ function getseatUpdate() {
                 else if(i ==5){
                     var style ={
                         position:"absolute",
-                        top:"545px",
-                        left:"757px",
+                        top:"665px",
+                        left:"950px",
                         size :"7"
                     }
                 }
                 else if(i ==6){
                     var style ={
                         position:"absolute",
-                        top:"545px",
-                        left:"998px",
+                        top:"665px",
+                        left:"1280px",
                         size :"7" 
                     }
                 }
@@ -73,32 +73,32 @@ function getseatUpdate() {
                 if(i == 1){
                     var style ={
                         position:"absolute",
-                        top:"185px",
-                        left:"515px",
+                        top:"230px",
+                        left:"620px",
                         size :"7"
                     }
                 }
                 else if(i ==2){
                     var style ={
                         position:"absolute",
-                        top:"185px",
-                        left:"757px",
+                        top:"230px",
+                        left:"950px",
                         size :"7"
                     }
                 }
                 else if(i ==3){
                     var style ={
                         position:"absolute",
-                        top:"185px",
-                        left:"998px",
+                        top:"230px",
+                        left:"1280px",
                         size :"7" 
                     }
                 }
                 else if(i ==4){
                     var style ={
                         position:"absolute",
-                        top:"545px",
-                        left:"518px",
+                        top:"665px",
+                        left:"620px",
                         size :"7"
                     }
                 }
@@ -106,20 +106,19 @@ function getseatUpdate() {
                 else if(i ==5){
                     var style ={
                         position:"absolute",
-                        top:"545px",
-                        left:"757px",
+                        top:"665px",
+                        left:"950px",
                         size :"7"
                     }
                 }
                 else if(i ==6){
                     var style ={
                         position:"absolute",
-                        top:"545px",
-                        left:"998px",
+                        top:"665px",
+                        left:"1280px",
                         size :"7" 
                     }
                 }
-
                 valElem.addClass('label label-danger');
                 valElem.css('font-size','36px');
                 valElem.removeClass('label-default');
@@ -129,32 +128,32 @@ function getseatUpdate() {
                 if(i == 1){
                     var style ={
                         position:"absolute",
-                        top:"185px",
-                        left:"515px",
+                        top:"230px",
+                        left:"620px",
                         size :"7"
                     }
                 }
                 else if(i ==2){
                     var style ={
                         position:"absolute",
-                        top:"185px",
-                        left:"757px",
+                        top:"230px",
+                        left:"950px",
                         size :"7"
                     }
                 }
                 else if(i ==3){
                     var style ={
                         position:"absolute",
-                        top:"185px",
-                        left:"998px",
+                        top:"230px",
+                        left:"1280px",
                         size :"7" 
                     }
                 }
                 else if(i ==4){
                     var style ={
                         position:"absolute",
-                        top:"545px",
-                        left:"518px",
+                        top:"665px",
+                        left:"620px",
                         size :"7"
                     }
                 }
@@ -162,16 +161,16 @@ function getseatUpdate() {
                 else if(i ==5){
                     var style ={
                         position:"absolute",
-                        top:"545px",
-                        left:"757px",
+                        top:"665px",
+                        left:"950px",
                         size :"7"
                     }
                 }
                 else if(i ==6){
                     var style ={
                         position:"absolute",
-                        top:"545px",
-                        left:"998px",
+                        top:"6655px",
+                        left:"1280px",
                         size :"7" 
                     }
                 }
