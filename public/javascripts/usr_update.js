@@ -132,6 +132,8 @@ function getseatUpdate() {
                 
                 valElem.addClass('label label-danger').css(style);
                 valElem.css('font-size','36px');
+                valElem.removeClass('label-success');
+                valElem.removeClass('label-default');
                 valElem.html(originalValue[str].usr)
                 
                 
@@ -191,6 +193,7 @@ function getseatUpdate() {
                 valElem.addClass('label label-success').css(style);
                 valElem.css('font-size','36px');
                 valElem.removeClass('label-default');
+                valElem.removeClass('label-danger');
                 valElem.html(originalValue[str].usr)
                 
                 
