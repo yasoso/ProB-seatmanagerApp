@@ -23,7 +23,7 @@ function getseatUpdate() {
                     var style ={
                         position:"absolute",
                         top:"230px",
-                        left:"540px",
+                        left:"440px",
                         size :"7"
                     }
                 }
@@ -31,7 +31,7 @@ function getseatUpdate() {
                     var style ={
                         position:"absolute",
                         top:"230px",
-                        left:"830px",
+                        left:"730px",
                         size :"7"
                     }
                 }
@@ -39,7 +39,7 @@ function getseatUpdate() {
                     var style ={
                         position:"absolute",
                         top:"230px",
-                        left:"1110px",
+                        left:"1010px",
                         size :"7" 
                     }
                 }
@@ -47,7 +47,7 @@ function getseatUpdate() {
                     var style ={
                         position:"absolute",
                         top:"630px",
-                        left:"540px",
+                        left:"440px",
                         size :"7"
                     }
                 }
@@ -56,7 +56,7 @@ function getseatUpdate() {
                     var style ={
                         position:"absolute",
                         top:"630px",
-                        left:"830px",
+                        left:"730px",
                         size :"7"
                     }
                 }
@@ -64,7 +64,7 @@ function getseatUpdate() {
                     var style ={
                         position:"absolute",
                         top:"630px",
-                        left:"1110px",
+                        left:"1010px",
                         size :"7" 
                     }
                 }
@@ -83,7 +83,7 @@ function getseatUpdate() {
                     var style ={
                         position:"absolute",
                         top:"230px",
-                        left:"540px",
+                        left:"440px",
                         size :"7"
                     }
                 }
@@ -91,7 +91,7 @@ function getseatUpdate() {
                     var style ={
                         position:"absolute",
                         top:"230px",
-                        left:"830px",
+                        left:"730px",
                         size :"7"
                     }
                 }
@@ -99,7 +99,7 @@ function getseatUpdate() {
                     var style ={
                         position:"absolute",
                         top:"230px",
-                        left:"1110px",
+                        left:"1010px",
                         size :"7" 
                     }
                 }
@@ -107,7 +107,7 @@ function getseatUpdate() {
                     var style ={
                         position:"absolute",
                         top:"630px",
-                        left:"540px",
+                        left:"440px",
                         size :"7"
                     }
                 }
@@ -116,7 +116,7 @@ function getseatUpdate() {
                     var style ={
                         position:"absolute",
                         top:"630px",
-                        left:"830px",
+                        left:"730px",
                         size :"7"
                     }
                 }
@@ -124,7 +124,7 @@ function getseatUpdate() {
                     var style ={
                         position:"absolute",
                         top:"630px",
-                        left:"1110px",
+                        left:"1010px",
                         size :"7" 
                     }
                 }
@@ -144,7 +144,7 @@ function getseatUpdate() {
                     var style ={
                         position:"absolute",
                         top:"230px",
-                        left:"540px",
+                        left:"440px",
                         size :"7"
                     }
                 }
@@ -152,7 +152,7 @@ function getseatUpdate() {
                     var style ={
                         position:"absolute",
                         top:"230px",
-                        left:"830px",
+                        left:"730px",
                         size :"7"
                     }
                 }
@@ -160,7 +160,7 @@ function getseatUpdate() {
                     var style ={
                         position:"absolute",
                         top:"230px",
-                        left:"1110px",
+                        left:"1010px",
                         size :"7" 
                     }
                 }
@@ -168,7 +168,7 @@ function getseatUpdate() {
                     var style ={
                         position:"absolute",
                         top:"630px",
-                        left:"540px",
+                        left:"440px",
                         size :"7"
                     }
                 }
@@ -177,7 +177,7 @@ function getseatUpdate() {
                     var style ={
                         position:"absolute",
                         top:"630px",
-                        left:"830px",
+                        left:"730px",
                         size :"7"
                     }
                 }
@@ -185,7 +185,7 @@ function getseatUpdate() {
                     var style ={
                         position:"absolute",
                         top:"630px",
-                        left:"1110px",
+                        left:"1010px",
                         size :"7" 
                     }
                 }
